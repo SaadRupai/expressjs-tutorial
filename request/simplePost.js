@@ -3,9 +3,9 @@ var express = require('express');
 app = express();
 
 
-app.get('/', (req, res) => {
+app.post('/', (req, res) => {
     try {
-        res.send("This is simple get request");
+        res.send("This is simple post request");
     }
     catch (error) {
         console.log("failed!", error);
